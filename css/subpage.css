@@ -1,0 +1,440 @@
+/* ========================================
+   Re:Threw - Subpage Stylesheet
+   ======================================== */
+
+/* Header Dark (for subpages) */
+.header-dark {
+    background: rgba(15, 15, 26, 0.95);
+    backdrop-filter: blur(20px);
+}
+
+/* Page Header */
+.page-header {
+    position: relative;
+    padding: 160px 0 80px;
+    overflow: hidden;
+}
+
+.page-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
+}
+
+.page-header-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.page-header-content {
+    position: relative;
+    text-align: center;
+}
+
+.page-label {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+
+.page-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+}
+
+/* Utility */
+.pc-only {
+    display: inline;
+}
+
+/* ========================================
+   Company Page
+   ======================================== */
+.company-section {
+    padding: 80px 0 120px;
+}
+
+/* Mission Block */
+.mission-block {
+    text-align: center;
+    padding: 60px 40px;
+    background: rgba(26, 26, 46, 0.5);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+.mission-label {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.mission-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.mission-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* Company Info Table */
+.company-info {
+    margin-bottom: 80px;
+}
+
+.info-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table tr {
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.info-table th,
+.info-table td {
+    padding: 25px 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.info-table th {
+    width: 200px;
+    font-weight: 600;
+    color: var(--primary-light);
+    background: rgba(139, 92, 246, 0.05);
+}
+
+.info-table td {
+    color: var(--text);
+}
+
+.business-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.business-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.business-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.business-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Strengths */
+.strengths {
+    margin-bottom: 60px;
+}
+
+.strengths-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.strength-card {
+    padding: 40px 30px;
+    background: rgba(26, 26, 46, 0.5);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.strength-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+}
+
+.strength-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: 16px;
+}
+
+.strength-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--primary);
+}
+
+.strength-card h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.strength-card p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* ========================================
+   Privacy Page
+   ======================================== */
+.privacy-section {
+    padding: 80px 0 120px;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-intro {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.9;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: rgba(26, 26, 46, 0.5);
+    border-radius: 16px;
+    border-left: 4px solid var(--primary);
+}
+
+.privacy-article {
+    margin-bottom: 40px;
+}
+
+.privacy-article h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    color: var(--text);
+}
+
+.privacy-article p {
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.privacy-article ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.privacy-article ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.privacy-article ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--gradient-2);
+    border-radius: 50%;
+}
+
+.contact-info {
+    padding: 25px;
+    background: rgba(26, 26, 46, 0.5);
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-date {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    text-align: right;
+}
+
+.privacy-date p {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 1024px) {
+    .strengths-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .strength-card {
+        padding: 30px 20px;
+    }
+
+    .strength-card h4 {
+        font-size: 1rem;
+    }
+
+    .strength-card p {
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 140px 0 60px;
+    }
+
+    .pc-only {
+        display: none;
+    }
+
+    .mission-block {
+        padding: 40px 25px;
+    }
+
+    .info-table th,
+    .info-table td {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .info-table th {
+        padding-bottom: 5px;
+    }
+
+    .info-table td {
+        padding-top: 5px;
+    }
+
+    .company-section,
+    .privacy-section {
+        padding: 60px 0 80px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .strengths-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .strength-card {
+        padding: 20px 15px;
+    }
+
+    .strength-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+    .strength-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .strength-card h4 {
+        font-size: 0.875rem;
+        margin-bottom: 8px;
+    }
+
+    .strength-card p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+}
