@@ -1553,28 +1553,42 @@ body.loading {
     }
 
     .hero {
-        padding: 0;
-        min-height: auto;
-        height: auto;
+        padding: 60px 20px;
+        min-height: 45vh;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-image {
-        position: relative;
         width: 100%;
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-image img {
-        width: 100%;
+        width: 80%;
+        max-width: 400px;
         height: auto;
-        object-fit: cover;
-        object-position: center;
         animation: none;
         display: block;
     }
 
-    .hero-bg {
+    .hero-bg.sp-override {
         position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: auto;
     }
 
